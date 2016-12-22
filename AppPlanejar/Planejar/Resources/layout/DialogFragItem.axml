@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DialogItemListCat"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/DialogItemTodos" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DialogItemSearch"
+        android:spinnerMode="dialog"
+        android:drawableRight="@android:drawable/ic_menu_search"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/DialogItemListCat" />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:id="@+id/DailogItemBtOk"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DialogItemList"
+        android:layout_below="@+id/DialogItemSearch"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/DailogItemBtOk" />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Todos"
+        android:id="@+id/DialogItemTodos"
+        android:checked="false"
+        android:layout_alignBottom="@+id/DialogItemListCat"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+</RelativeLayout>

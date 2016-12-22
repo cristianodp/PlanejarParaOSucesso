@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.dinizdesenvolve.planejar" android:versionName="1.0.3" android:installLocation="auto" android:versionCode="3">
+  <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="23" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <application android:label="Planejar Para O Sucesso" android:icon="@drawable/ic_planejar" android:debuggable="false" android:name="android.app.Application" android:allowBackup="true">
+    <activity android:icon="@drawable/icon" android:label="Planejar" android:theme="@style/AppTheme" android:name="md5742e10e4baea87051d3b71426106f050.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="Planejar" android:name="md5b24c80c79d3d0a4153b75d61159fbc7f.CadUsuarioActivity" />
+    <activity android:label="Planejar" android:name="md5b24c80c79d3d0a4153b75d61159fbc7f.LoginActivity" />
+    <activity android:icon="@drawable/icon" android:label="Planejar" android:theme="@style/AppTheme" android:name="md5063adb22abd727d86a9b4d13c7cd6bcc.EditeMovtoActivity" />
+    <activity android:icon="@drawable/icon" android:label="Planejar" android:theme="@style/AppTheme" android:name="md5e516c03c6b0240ded21221f6313134e5.EditeContaActivity" />
+    <activity android:icon="@drawable/icon" android:label="Planejar" android:theme="@style/AppTheme" android:name="md5df22af1d510ef9670b64eb29523f81f0.EditeCategoriaActivity" />
+    <activity android:icon="@drawable/icon" android:label="Planejar" android:theme="@style/AppTheme" android:name="md5df22af1d510ef9670b64eb29523f81f0.EditeItCategoriaActivity" />
+    <activity android:icon="@drawable/icon" android:label="Planejar" android:theme="@style/AppTheme" android:name="md5df22af1d510ef9670b64eb29523f81f0.MetasCatActivity" />
+    <activity android:icon="@drawable/icon" android:label="Planejar" android:theme="@style/AppTheme" android:name="md5df22af1d510ef9670b64eb29523f81f0.ItensCatActivity" />
+    <activity android:icon="@drawable/icon" android:label="Planejar" android:theme="@style/AppTheme" android:name="md55b682e55bf6bcefa0289ea055791a1b1.EditeMetCategoriaActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.dinizdesenvolve.planejar.mono.MonoRuntimeProvider.__mono_init__" />
+  </application>
+</manifest>

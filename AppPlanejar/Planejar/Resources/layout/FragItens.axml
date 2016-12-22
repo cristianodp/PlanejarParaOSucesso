@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:noHistory="true"
+    android:minWidth="25px"
+    android:minHeight="25px">
+
+  <TextView
+      android:text="@string/ItemCatTitulo1"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:id="@+id/textView13"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true" />
+  <ListView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/ItCatlistView"
+      android:layout_alignParentBottom="true"
+      android:layout_below="@+id/textView13" />
+  <com.refractored.fab.FloatingActionButton
+      android:id="@+id/itCatBTAdd"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/ic_add_circle_black_48dp"
+      fab:fab_colorNormal="@color/accent"
+      fab:fab_colorPressed="@color/accent_pressed"
+      fab:fab_colorRipple="@color/ripple"
+      fab:fab_size="mini"
+      fab:fab_shadow="false"
+      android:foregroundGravity="bottom"
+      android:layout_marginBottom="20dp"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true"
+      android:layout_marginRight="20dp" />
+
+
+</RelativeLayout>

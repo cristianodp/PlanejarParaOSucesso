@@ -1,0 +1,41 @@
+﻿<html>
+<head>
+    <script type="text/javascript" href ="loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['gauge']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Label', 'Value'],
+          ['Meta', Android.getValue(0)]
+        ]);
+
+        var options = {
+          width: 150, height: 150,
+          redFrom: 90, redTo: 100,
+          yellowFrom:75, yellowTo: 90,
+          minorTicks: 5
+        };
+
+        var chart = new google.visualization.Gauge(document.getElementById('chart_div'));
+
+        chart.draw(data, options);
+
+        setInterval(function() {
+          data.setValue(2, 1, 60 + Math.round(20 * Math.random()));
+          chart.draw(data, options);
+        }, 26000);
+
+        //var b = document.getElementById("body1");
+       // var color = Android.getBackGroundColor();
+       // b.style.backgroundColor = color;
+
+
+      }
+    </script>
+</head>
+<body id="body1">
+    <div id="chart_div" style="width: 150px; height: 150px; margin: auto; ">Carregando...</div>
+</body>
+</html>

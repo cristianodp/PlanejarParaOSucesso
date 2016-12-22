@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:noHistory="true"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="Categoria"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/textView13"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CatlistView"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textView13" />
+    <ListView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/lista"
+        android:layout_below="@+id/CatBTAdd"
+        android:layout_alignParentBottom="true" />
+    <com.refractored.fab.FloatingActionButton
+        android:id="@+id/CatBTAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_circle_black_48dp"
+        fab:fab_colorNormal="@color/accent"
+        fab:fab_colorPressed="@color/accent_pressed"
+        fab:fab_colorRipple="@color/ripple"
+        fab:fab_size="mini"
+        fab:fab_shadow="false"
+        android:foregroundGravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp" />
+<!--
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/CatBTAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@android:drawable/ic_input_add"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/CatbtAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:src="@drawable/ic_add_circle_black_48dp" />
+              -->
+</RelativeLayout>

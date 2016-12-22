@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service xml:base="http://gesfin.azurewebsites.net/odata" xmlns="http://www.w3.org/2007/app" xmlns:atom="http://www.w3.org/2005/Atom">
+  <workspace>
+    <atom:title type="text">Default</atom:title>
+    <collection href="Usuarios">
+      <atom:title type="text">Usuarios</atom:title>
+    </collection>
+    <collection href="Categorias">
+      <atom:title type="text">Categorias</atom:title>
+    </collection>
+    <collection href="Lancamentos">
+      <atom:title type="text">Lancamentos</atom:title>
+    </collection>
+    <collection href="Metas">
+      <atom:title type="text">Metas</atom:title>
+    </collection>
+    <collection href="Itens">
+      <atom:title type="text">Itens</atom:title>
+    </collection>
+  </workspace>
+</service>

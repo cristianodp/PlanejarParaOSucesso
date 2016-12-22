@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<translate xmlns:android="http://schemas.android/apk/res/android"
+           android:fromYdelta="100%p"
+           android:toYdelta="0"
+           android:duration="500"
+           />

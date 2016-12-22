@@ -1,0 +1,39 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <script src="canvasjs.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        //atualiza de tempos em tempos
+		// Change type to "bar", "area", "spline",splineArea, "pie", doughnut,line, column.
+        /*setInterval(function(){
+          StartChart();
+
+        }, 10000);*/
+
+        setInterval(function () {
+            $(".canvasjs-chart-credit").html("");
+        }, 1000);
+        StartChart();
+      });
+
+    function StartChart() {
+
+        //var strJson = '{"theme":"theme2","title":{"text":"Basic Column Chart - CanvasJS"},"animationEnabled":true,"data":[{"type":"splineArea","dataPoints":[{"label":"A","x":null,"y":15},{"label":"B","x":null,"y":35},{"label":"C","x":null,"y":15},{"label":"A","x":null,"y":30}]}]}';
+        var strJson = Android.getValueJson();
+        var chartValues = JSON.parse(strJson);
+        //$("#chartContainer").text(" valor é " + strJson);
+        var chart = new CanvasJS.Chart("chartContainer", chartValues);
+
+        chart.render();
+        $(".canvasjs-chart-credit").html("");
+
+    }
+
+    </script>
+</head>
+<body>
+    <div id="chartContainer" style="height: 200px; width: 100%; background-color: transparent;">teste</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Planejar.Planejar" android:versionCode="1" android:versionName="1.0">
+  <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="23" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <application android:label="Planejar" android:name="mono.android.app.Application" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
+    <activity android:icon="@drawable/icon" android:label="Planejar" android:theme="@style/AppTheme" android:name="md5c65e1a361f3bb2092976dd81301fb69f.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="CadastroActivity" android:name="md5acf8348a1d5593f84b5b818408a30e26.CadUsuarioActivity" />
+    <activity android:label="LoginActivity" android:name="md5acf8348a1d5593f84b5b818408a30e26.LoginActivity" />
+    <activity android:icon="@drawable/icon" android:label="Planejar" android:theme="@style/AppTheme" android:name="md54b87fc518a446b0f2a522d5ba07720e2.EditeMovtoActivity" />
+    <activity android:icon="@drawable/icon" android:label="Planejar" android:theme="@style/AppTheme" android:name="md515e3e9cce5687a9d2612b4153d372ae8.EditeContaActivity" />
+    <activity android:icon="@drawable/icon" android:label="Planejar" android:theme="@style/AppTheme" android:name="md571e82ea8ed9253b0b112b003bd95d2d7.EditeCategoriaActivity" />
+    <activity android:icon="@drawable/icon" android:label="Planejar" android:theme="@style/AppTheme" android:name="md571e82ea8ed9253b0b112b003bd95d2d7.EditeItCategoriaActivity" />
+    <activity android:icon="@drawable/icon" android:label="Planejar" android:theme="@style/AppTheme" android:name="md571e82ea8ed9253b0b112b003bd95d2d7.MetasCatActivity" />
+    <activity android:icon="@drawable/icon" android:label="Planejar" android:theme="@style/AppTheme" android:name="md571e82ea8ed9253b0b112b003bd95d2d7.ItensCatActivity" />
+    <activity android:icon="@drawable/icon" android:label="Planejar" android:theme="@style/AppTheme" android:name="md582085b63e2bc8aeb4ac48eaebd0bcf9b.EditeMetCategoriaActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="Planejar.Planejar.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.Planejar.Planejar" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>
